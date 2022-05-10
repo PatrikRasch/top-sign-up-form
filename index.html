@@ -7,15 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1 class="bigTitle">Hello</h1>
-    <ol class="list1">
-        <li>Yes</li>
-        <li>No</li>
-        <li>3</li>
-    </ol>
+
+    <div class="all">
+        <div class="side-img">
+            <img src="images/odin-logo.png" class="odin-logo" alt="the odin project logo on top of mountain-top photo">
+            <div class="blackbar">" "</div>
+            <img src="images/parastinden.jpg" alt="drone photo of mountain-top with the fjords in the distance"
+                class="side-img-itself">
+
+        </div>
+
+        <div class="right-side">
+
+            <div class="top-text">
+                <div class="top-text-itself">
+                    This is not a real online service! You know you need something <br>
+                    like this in your life to help you realize your deepest dreams. <br>
+                    Sign up <em>now</em> to get started <br>
+                    <p><strong>you <em>know</em> you want to.</strong></p>
+                </div>
+            </div>
+
+            <div class="sign-up-form">
+                <h2 class>Let's do this!</h2>
+                <form onSubmit="return checkPassword(this)"
+                    action="https://tenor.com/view/dance-roblox-youve-been-hacked-gif-15270346" method="GET" id="form1">
+
+                    <div class="top-inputs">
+                        <div class="firstname">
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="lastname">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="middle-inputs">
+                        <div class="email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                        </div>
+                    </div>
+                    <div class="bottom-inputs">
+                        <div class="password">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" class="error" required>
+                        </div>
+                        <div class="password2">
+                            <label for="password2">CONFIRM PASSWORD</label>
+                            <input type="password" id="password2" name="password2" class="error" required>
+                        </div>
+                    </div>
+                </form>
+                <!-- <input type="submit" value="Create Account" class="btn"> -->
+            </div>
+
+            <div class="account-buttons">
+                <div class="create-account">
+                    <button type="submit" form="form1" class="btn">Create Account</button>
+                </div>
+                <div class="log-in">
+                    Already have an account?&nbsp;
+                    <div class="log-in-text"> <a href="https://www.youtube.com/watch?v=oBr-0R7UbXs&t=6s">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
