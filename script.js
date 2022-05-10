@@ -1,12 +1,21 @@
-function checkPassword(form1) {
-    password1 = form1.password.value;
-    password2 = form1.password2.value;
+const password1 = document.getElementById("password");
+const password2 = document.getElementById("password2");
+const message = document.getElementById("message");
 
-    if (password1 != password2) {
-        alert("\nPassword did not match: Please try again.")
-        return false;
-    }
-    else {
-        return true;
-    }
+let passwordCheck = function () {
+    password1.classList.remove("mismatch")
+    password2.classList.remove("mismatch")
+    message.innerText = '';
+    form.addEventListener("submit", (e) => {
+        if (password1.value == password2.value) {
+            document.getElementById('message').style.color = 'green';
+
+        } else {
+            message.style.color = 'red';
+            message.innerText = '* Passwords do not match';
+            password1.classList.add("mismatch");
+            password2.classList.add("mismatch");
+            e.preventDefault()
+        }
+    })
 }

@@ -98,6 +98,16 @@ h2 {
     margin-top: 20px;
 }
 
+.mismatch {
+    color: #c92432;
+    border-color: #c92432;
+    border-radius: 3px;
+}
+
+#message {
+    font-size: 0.85em;
+}
+
 #name,
 #last-name,
 #email,
@@ -282,14 +292,14 @@ label {
         box-sizing: border-box;
     }
 
-    .top-inputs,
+    /* .top-inputs,
     .middle-inputs,
     .bottom-inputs {
         display: flex;
         flex-direction: column;
         margin-top: 0px;
         align-items: center;
-    }
+    } */
 
     .firstname,
     .lastname,
